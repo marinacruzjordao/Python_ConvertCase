@@ -26,7 +26,6 @@ class Convert:
             self.event, value = self.w1.read()
             self.text=value.get('text')
 
-
             # window closed
             if self.event == sg.WINDOW_CLOSED:            
                 break
@@ -80,7 +79,6 @@ class Convert:
                 print(self.text[i].upper(), end="")
             else:
                 print(self.text[i].lower(), end="")
-
 
 c=Convert()
 c.start()
