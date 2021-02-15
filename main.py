@@ -43,15 +43,17 @@ class Convert:
             if self.event == 'Alternating Case':
                 self.alternating()
 
-
+    #upper case
     def uppercase(self):
         self.upp=self.text.upper()
         print(self.upp)
 
+    #lower case
     def lowercase(self):
         self.low=self.text.lower()
         print(self.low)
 
+    #capitalize case
     def capitalize(self):
         for i in range(0,len(self.text)): #find . and put the first letter after in upper case
 
@@ -65,6 +67,7 @@ class Convert:
                     print(self.text[i].lower(),end="")
         print()
 
+    #alternating case
     def alternating(self):
         n=randint(1,len(self.text))
         random_l=[]
@@ -80,6 +83,7 @@ class Convert:
             else:
                 print(self.text[i].lower(), end="")
         print()
+
 
 c=Convert()
 c.start()
