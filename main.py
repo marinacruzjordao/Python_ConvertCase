@@ -32,16 +32,16 @@ class Convert:
             
             # cases
             if self.event == 'Upper Case':
-                c.uppercase()
+                self.uppercase()
 
             if self.event == 'Lower Case':
-                c.lowercase()
+                self.lowercase()
 
             if self.event == 'Capitalized Case':
-                c.capitalize()
+                self.capitalize()
 
             if self.event == 'Alternating Case':
-                c.alternating()
+                self.alternating()
 
 
     def uppercase(self):
@@ -79,6 +79,7 @@ class Convert:
                 print(self.text[i].upper(), end="")
             else:
                 print(self.text[i].lower(), end="")
+        print()
 
 c=Convert()
 c.start()
